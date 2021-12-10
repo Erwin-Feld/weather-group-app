@@ -13,10 +13,10 @@ async function dirk(urlNewsApi) {
 
         data = document.getElementById('dirk');
         data.innerHTML += 
-        `<div"> ${apiData.current_weather.time}</div>
+        `<div"> ${apiData.daily.sunrise}</div>
         <div"> ${apiData.current_weather.windspeed}</div>
         <div"> ${apiData.current_weather.winddirection}</div>`
     }
 
 }
-window.onload = dirk();
+window.onload = dirk(urlNewsApi);
