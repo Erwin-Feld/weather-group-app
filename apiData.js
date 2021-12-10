@@ -25,3 +25,8 @@ const urlNewsApi = "https://api.open-meteo.com/v1/forecast?latitude=52.52&longit
 
 
 fetchWeatherData(urlNewsApi)
+
+async function aymen() {
+    const apiData = await fetchWeatherData()
+    
+}
